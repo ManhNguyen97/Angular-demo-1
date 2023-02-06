@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Students } from './common/students';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-demo-1';
+  // students : Students = {
+  //   name : 'Gillz',
+  //   age : 20,
+  //   email: 'asdf@gmail.com'
+  // }
 }

@@ -1,0 +1,12 @@
+index.html -> app.component.html -> product.../student.../...component.html
+
+Common: Tạo interface (class).
+Component:
+  ->Tạo component 
+  -> change html+ts file 
+  -> khai báo component trong app.module.ts 
+  -> nhúng <app-name-component></app-name-component>
+Binding: {{  }} ; (...) = "..."
+Routes: 
+  ->dùng link (xóa href, sử dụng điều hướng của angular)
+  ->khai báo, import routes trong app.module.ts

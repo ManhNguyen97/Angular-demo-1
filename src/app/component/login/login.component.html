@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col offset-3">
+    <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+    <!-- biến cục bộ trên template, #name -->
+    <div class="card">
+      <div class="card-head">
+        <h1>Login</h1>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email"
+            class="form-control" name="email" ngModel id="email" aria-describedby="helpId" placeholder="">
+          <small id="helpId" class="form-text text-muted">Email Eror!</small>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="text"
+            class="form-control" name="password" ngModel id="password" aria-describedby="helpId" placeholder="">
+          <small id="helpId" class="form-text text-muted">Password Eror!</small>
+        </div>
+
+        <div class="card-footer text-center">
+          <button class="btn btn-primary" type="submit">SignIn</button>
+          <button class="btn btn-primary" type="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>

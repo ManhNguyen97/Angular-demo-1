@@ -1,0 +1,22 @@
+<div class="container">
+  <form action="">
+    <div class="form-group">
+      <label for="productCode">ProductCode: </label>
+      <input type="text" id="productCode" name="productCode" class="form-control" aria-describedby="codeHelpId"
+      [(ngModel)]="product.productCode" >
+      <small id="codeHelpID" class="form-text text-muted">ProductCode is required.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="productName">ProductName: </label>
+      <input type="text" id="productName" name="productName" class="form-control" aria-describedby="nameHelpId"
+      [(ngModel)]="product.productName" >
+      <small id="nameHelpId" class="form-text text-muted">ProductName is required.</small>
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-primary">Update</button>
+    </div>
+  </form>
+  <p>{{ product | json }}</p>
+</div>
